@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PICKS</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: orange;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0 10px;
+        position: relative;
+    }
+
+    
+    
+    li:hover > ul {
+        display: block;
+    }
+
+    ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    ul ul li {
+        margin: 0;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        padding: 20px;
+        display: block;
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .submenu li {
+        margin-left: 5px;
+    }
+
+    .submenu a {
+        color: black;
+        text-decoration: none;
+    }
+    .logo {
+        margin-left: 5px;
+    }
+
+    .search {
+        position: relative;
+        width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid #bbb;
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .search_img {
+        position: absolute;
+        top: 33px;
+        right: 35px;
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .search_img img {
+        width: 33px;
+        height: 31px;
+    }
+
+    div{
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li class="logo">
+            <a href="Project2_Main.html" target="_blank">
+            <img src="https://drive.google.com/thumbnail?id=1Gk9CAmk92FaolG9kJLwWKUFWyCZsuS57&sz=w70" alt="PICK 로고"></a>
+        </li>
+
+        <li><a href="#">INFO</a>
+            <ul style="z-index: 1;">
+                <li><a href="#">thema</a></li>
+                <li><a href="#">map</a></li>
+                <li><a href="#">traffic</a></li>
+                <li><a href="#">weather</a></li>
+            </ul>
+        </li>
+        <li><a href="#">COMMUNITY</a>
+            <ul>
+                <li><a href="#">개인정보관리</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="submenu">
+        <li><a href="Project3_회원가입_약관.html">회원가입</a></li>
+        <li><a href="Project1_Login.html">로그인</a></li>
+        <li><a href="#">고객센터</a></li>
+    </ul>
+</nav>
+
+<div class="search">
+    <input type="text" placeholder="검색어 입력">
+    <button class="search_img">
+        <img src="검색창.png" width="30" height="33">
+    </button>
+</div>
+
+<div class="img-button">
+    <button><a href="#" target="_blank">
+        <img src="이미지.jpg" width="400" height="500"></a>
+    </button>
+
+    <button><a href="#" target="_blank">
+        <img src="이미지.jpg" width="400" height="500"></a>
+    </button>
+
+    <button><a href="#" target="_blank">
+        <img src="이미지.jpg" width="400" height="500"></a>
+    </button>
+</div>
+</body>
+</html>
